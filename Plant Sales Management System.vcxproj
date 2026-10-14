@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32"><Configuration>Debug</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32"><Configuration>Release</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64"><Configuration>Debug</Configuration><Platform>x64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64"><Configuration>Release</Configuration><Platform>x64</Platform></ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals"><VCProjectVersion>18.0</VCProjectVersion><ProjectGuid>{9A7B11A8-0E0B-4E6F-A2A0-74D7B6F02B11}</ProjectGuid><TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion><Keyword>ManagedCProj</Keyword><RootNamespace>PlantSalesManagementSystem</RootNamespace><WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration"><ConfigurationType>Application</ConfigurationType><UseDebugLibraries>true</UseDebugLibraries><PlatformToolset>v145</PlatformToolset><CLRSupport>true</CLRSupport><CharacterSet>Unicode</CharacterSet></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration"><ConfigurationType>Application</ConfigurationType><UseDebugLibraries>false</UseDebugLibraries><PlatformToolset>v145</PlatformToolset><CLRSupport>true</CLRSupport><CharacterSet>Unicode</CharacterSet></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration"><ConfigurationType>Application</ConfigurationType><UseDebugLibraries>true</UseDebugLibraries><PlatformToolset>v145</PlatformToolset><CLRSupport>true</CLRSupport><CharacterSet>Unicode</CharacterSet></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration"><ConfigurationType>Application</ConfigurationType><UseDebugLibraries>false</UseDebugLibraries><PlatformToolset>v145</PlatformToolset><CLRSupport>true</CLRSupport><CharacterSet>Unicode</CharacterSet></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ItemDefinitionGroup><ClCompile><WarningLevel>Level3</WarningLevel><PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions></ClCompile><Link><SubSystem>Windows</SubSystem></Link></ItemDefinitionGroup>
+  <ItemGroup><Reference Include="System"/><Reference Include="System.Data"/><Reference Include="System.Drawing"/><Reference Include="System.Windows.Forms"/><Reference Include="System.Xml"/><Reference Include="MySql.Data"><HintPath>packages\MySql.Data.8.4.0\lib\net462\MySql.Data.dll</HintPath><Private>true</Private></Reference></ItemGroup>
+  <ItemGroup><ClCompile Include="main.cpp" /></ItemGroup>
+  <ItemGroup><ClInclude Include="Database.h"/><ClInclude Include="Models.h"/><ClInclude Include="LoginForm.h"/><ClInclude Include="MainForm.h"/></ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>
